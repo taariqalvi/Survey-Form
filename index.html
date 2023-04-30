@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Here starts the Heading -->
+    <h1 id="title">Gallop Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <!-- Here starts the Form -->
+    <form id="survey-form">
+        <!-- Name -->
+        <label for="name" id="name-label">Name</label><br>
+        <input type="text" name="name" id="name" placeholder="Enter your name" size="50" required>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email" id="email-label">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="Enter your email" size="50" required>
+        <br><br>
+
+        <!-- Age in Numbers -->
+        <label for="number" id="number-label">Age (optional)</label><br>
+        <input type="number" name="age" id="number" min="18" max="60" placeholder="Select age between 18-60">
+        <br><br>
+
+        <!-- Dropdown Menu -->
+        <label for="dropdown">Which option best describes your current role?</label>
+        <br>
+        <select name="careers" id="dropdown">
+            <optgroup label="Personal">
+                <option value="student">I'm Student</option>
+                <option value="jobseeker">I'm Job Seeker</option>
+                <option value="femployee">Full-time Employee</option>
+                <option value="pemployee">Part-time Employee</option>
+                <option value="semployed"> Self-employed</option>
+                <option value="businessman">I'm Businessman</option>
+            </optgroup>
+            <optgroup label="Professional">
+                <option value="doctor">I'm Doctor</option>
+                <option value="engineer">I'm Engineer</option>
+                <option value="webdeveloper" selected>I'm Web Developer</option>
+                <option value="teacher">I'm Teacher</option>
+                <option value="researcher">I'm Researcher</option>
+                <option value="businessman">I'm Businessman</option>
+            </optgroup>
+        </select>
+        <br><br>
+
+        <!-- Radio Buttons -->
+        What commonly you like to do in your leisure time? <br>
+        <input type="radio" name="name" id="movies" value="movies">Watch Movies <br>
+        <input type="radio" name="name" id="plants" value="plants">Grow New Plants <br>
+        <input type="radio" name="name" id="indoor" value="indoor">Indoor Games <br>
+        <input type="radio" name="name" id="outdoor" vlaue="outdoor">Outdoor Games
+        <br><br>
+
+        <!-- Checkboxes -->
+        Do you have any suggestion regarding recent reforms of Government? (you can check more than one box) <br>
+        <input type="checkbox" value="Suggestion1"> Population census is not reliable <br>
+
+        <input type="checkbox" value="Suggestion2"> Poverty line is not clearly defined <br>
+
+        <input type="checkbox" value="Suggestion3"> Tax-slabs for low income individuals should be revised <br>
+
+        <input type="checkbox" value="Suggestion4"> Pensions and Old Age Benefits should be increased <br>
+
+        <input type="checkbox" value="Suggestion5"> Agricultural free zones should be introduced <br>
+
+        <input type="checkbox" value="Suggestion6"> Education sector should be Public <br>
+
+        <input type="checkbox" value="Suggestion7"> Health sector should be Public <br>
+
+        <input type="checkbox" value="Suggestion9"> Early education and health services should be free for all
+        <br><br>
+
+        <!-- Textarea -->
+        Any New Idea? <br>
+        <textarea name="" id="" cols="30" rows="5" placeholder="Please start from here..."></textarea>
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" name="" id="submit">
+    </form>
+
+</body>
+
+</html>
